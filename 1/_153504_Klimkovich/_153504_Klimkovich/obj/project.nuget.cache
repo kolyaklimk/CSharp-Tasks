@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "JJP7irXzLcQQRCCP8EiKVTmkRulJ+L9P4zQ2z5drOon8f725S/10ABF4Awjp0RiC/fnnBycJtP6kZfTGN87rMQ==",
+  "success": true,
+  "projectFilePath": "C:\\C#\\1\\_153504_Klimkovich\\_153504_Klimkovich\\_153504_Klimkovich.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Коля\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
+    "C:\\Users\\Коля\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}
