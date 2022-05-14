@@ -8,7 +8,7 @@ namespace _8
 {
     class Tariff
     {
-        public string name { get; set; }
+        public string name;
         IPrice ip;
         public Tariff(string Name, IPrice Ip)
         {

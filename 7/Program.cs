@@ -38,11 +38,9 @@ namespace _7
             if (equation1) Console.WriteLine("\nВсе значения уравнения1 положительны");
             else Console.WriteLine("\nНе все значения уравнения1 положительны");
 
-            double x = (double)equation1;
-            Console.WriteLine(x);
+            Console.WriteLine((char)equation1);
+            Console.WriteLine((double)equation1);
 
-            equation3 = x;
-            Console.WriteLine(equation3[0]);
         }
     }
 }

@@ -24,7 +24,7 @@ namespace _8
             if (tariff.Count() > 0)
             {
                 price = tariff[0].GetPrice();
-                temp = tariff[0].name + "   , Price: " + price.ToString();
+                temp = tariff[0].name + ", Price: " + price.ToString();
                 foreach (Tariff t in tariff)
                 {
                     if (t.GetPrice() > price)

@@ -21,6 +21,11 @@ namespace _7
                 return arr[index];
             }
         }
+
+        public override string ToString()
+        {
+            return base.ToString();
+        }
         private string toString(double x)
         {
             return "x = " + x.ToString();
