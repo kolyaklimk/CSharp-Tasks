@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "FileService/1.0.0": {
+        "dependencies": {
+          "6": "1.0.0"
+        },
+        "runtime": {
+          "FileService.dll": {}
+        }
+      },
+      "6/1.0.0": {
+        "runtime": {
+          "6.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "FileService/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "6/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
