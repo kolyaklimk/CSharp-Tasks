@@ -5,7 +5,6 @@ namespace Lab_1.Task3
 {
     public static class Task3
     {
-
         public static void StartTask()
         {
             MyConsole.printTasks(3);
