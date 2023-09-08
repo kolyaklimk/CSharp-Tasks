@@ -8,7 +8,12 @@ namespace Lab_1
         {
             Task1.Task1.StartTask();
             Task2.Task2.StartTask();
-            Console.ReadLine();
+            Task3.Task3.StartTask();
+
+            while (true)
+            {
+                Console.ReadLine();
+            }
         }
     }
 }

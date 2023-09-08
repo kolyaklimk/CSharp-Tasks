@@ -49,7 +49,7 @@ namespace Lab_1.Task2
             {
                 Name = splitText[0],
                 Surname = splitText[1],
-                Age = int.Parse(splitText[2]),
+                Age = age,
             };
         }
 
@@ -77,6 +77,14 @@ namespace Lab_1.Task2
             return Math.Round(list.Average(h => h.Age), 2);
         }
 
+        public static string GetError(double a)
+        {
+            if (a == -1)
+                return "Error";
+
+            return a.ToString();
+        }
+
         public static void ReadConsole()
         {
             Console.WriteLine("Print \"Surname Name Age\", or '$' to stop.");
@@ -89,7 +97,7 @@ namespace Lab_1.Task2
                     break;
 
                 var human = CheckData(text);
-                if(human == null)
+                if (human == null)
                 {
                     Console.WriteLine("Error, try again");
                 }
@@ -99,7 +107,7 @@ namespace Lab_1.Task2
                 }
             }
 
-            Console.WriteLine($"LowAge: {LowAge(humans)}; HightAge: {HightAge(humans)}; AverageAge: {AverageAge(humans)}");
+            Console.WriteLine($"LowAge: {GetError(LowAge(humans))}; HightAge: {GetError(HightAge(humans))}; AverageAge: {GetError(AverageAge(humans))}");
         }
     }
 }
