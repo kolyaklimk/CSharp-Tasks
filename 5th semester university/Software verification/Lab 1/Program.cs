@@ -7,6 +7,7 @@ namespace Lab_1
         static void Main(string[] args)
         {
             Task1.Task1.StartTask();
+            Task2.Task2.StartTask();
             Console.ReadLine();
         }
     }
