@@ -77,14 +77,6 @@ namespace Lab_1.Task2
             return Math.Round(list.Average(h => h.Age), 2);
         }
 
-        public static string GetError(double a)
-        {
-            if (a == -1)
-                return "Error";
-
-            return a.ToString();
-        }
-
         public static void ReadConsole()
         {
             Console.WriteLine("Print \"Surname Name Age\", or '$' to stop.");
@@ -107,7 +99,10 @@ namespace Lab_1.Task2
                 }
             }
 
-            Console.WriteLine($"LowAge: {GetError(LowAge(humans))}; HightAge: {GetError(HightAge(humans))}; AverageAge: {GetError(AverageAge(humans))}");
+            Console.WriteLine(
+                $"LowAge: {MyConsole.GetError(LowAge(humans))}; " +
+                $"HightAge: {MyConsole.GetError(HightAge(humans))}; " +
+                $"AverageAge: {MyConsole.GetError(AverageAge(humans))}");
         }
     }
 }
