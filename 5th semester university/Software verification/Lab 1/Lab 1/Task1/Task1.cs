@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Lab_1.Other;
+using System;
 
 namespace Lab_1.Task1
 {
@@ -6,6 +7,7 @@ namespace Lab_1.Task1
     {
         public static void StartTask()
         {
+            MyConsole.printTasks(1);
             Console.WriteLine(GenerateString());
         }
 
