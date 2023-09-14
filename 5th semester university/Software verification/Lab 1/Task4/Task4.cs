@@ -38,7 +38,7 @@ namespace Lab_1.Task4
                 string backgroundColor = $"rgb({red}, {green}, {blue})";
 
                 sb.AppendLine("<tr style=\"background-color: " + backgroundColor + "; font-size: 1px;\">");
-                sb.AppendLine("<td>Строка " + (i + 1) + "</td>");
+                sb.AppendLine("<td></td>");
                 sb.AppendLine("</tr>");
             }
 

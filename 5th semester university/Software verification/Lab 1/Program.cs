@@ -6,11 +6,12 @@ namespace Lab_1
     {
         static void Main(string[] args)
         {
-            /*Task1.Task1.StartTask();
+            Task1.Task1.StartTask();
             Task2.Task2.StartTask();
             Task3.Task3.StartTask();
-            Task4.Task4.StartTask();*/
+            Task4.Task4.StartTask();
             Task5.Task5.StartTask();
+            Task6.Task6.StartTask();
             Console.WriteLine("\n\n");
             while (true)
             {

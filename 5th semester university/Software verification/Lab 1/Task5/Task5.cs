@@ -23,7 +23,8 @@ namespace Lab_1.Task5
             return true;
         }
 
-        public static void Find(string path, string extension) {
+        public static void Find(string path, string extension)
+        {
             foreach (var file in Directory.EnumerateFiles(path, extension, SearchOption.AllDirectories))
             {
                 Console.WriteLine(file);
