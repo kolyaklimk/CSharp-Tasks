@@ -9,7 +9,7 @@ namespace Lab_1.Task6
     {
         public static void StartTask()
         {
-            MyConsole.printTasks(6);
+            MyConsole.PrintTasks(6);
             Work();
         }
 

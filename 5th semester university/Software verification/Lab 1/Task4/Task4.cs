@@ -9,7 +9,7 @@ namespace Lab_1.Task4
     {
         public static void StartTask()
         {
-            MyConsole.printTasks(4);
+            MyConsole.PrintTasks(4);
             CreateFile();
         }
 

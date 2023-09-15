@@ -1,6 +1,7 @@
 ﻿using Lab_1.Other;
 using System;
 using System.IO;
+using System.Text;
 
 namespace Lab_1.Task5
 {
@@ -8,7 +9,7 @@ namespace Lab_1.Task5
     {
         public static void StartTask()
         {
-            MyConsole.printTasks(5);
+            MyConsole.PrintTasks(5);
             Work();
         }
 
@@ -23,12 +24,14 @@ namespace Lab_1.Task5
             return true;
         }
 
-        public static void Find(string path, string extension)
+        public static string Find(string path, string extension)
         {
+            StringBuilder sb = new StringBuilder();
             foreach (var file in Directory.EnumerateFiles(path, extension, SearchOption.AllDirectories))
             {
-                Console.WriteLine(file);
+                sb.AppendLine(file);
             }
+            return sb.ToString();
         }
 
         public static void Work()
@@ -63,7 +66,7 @@ namespace Lab_1.Task5
                 }
             }
 
-            Find(path, $"*.{extension}");
+            Console.WriteLine(Find(path, $"*.{extension}"));
         }
     }
 }

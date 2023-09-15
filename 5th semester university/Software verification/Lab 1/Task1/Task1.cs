@@ -7,7 +7,7 @@ namespace Lab_1.Task1
     {
         public static void StartTask()
         {
-            MyConsole.printTasks(1);
+            MyConsole.PrintTasks(1);
             Console.WriteLine(GenerateString());
         }
 

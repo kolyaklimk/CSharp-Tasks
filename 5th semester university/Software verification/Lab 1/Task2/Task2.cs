@@ -17,7 +17,7 @@ namespace Lab_1.Task2
     {
         public static void StartTask()
         {
-            MyConsole.printTasks(2);
+            MyConsole.PrintTasks(2);
             ReadConsole();
         }
 
@@ -100,9 +100,9 @@ namespace Lab_1.Task2
             }
 
             Console.WriteLine(
-                $"LowAge: {MyConsole.GetError(LowAge(humans))}; " +
-                $"HightAge: {MyConsole.GetError(HightAge(humans))}; " +
-                $"AverageAge: {MyConsole.GetError(AverageAge(humans))}");
+                $"LowAge: {MyConsole.GetDouble(LowAge(humans))}; " +
+                $"HightAge: {MyConsole.GetDouble(HightAge(humans))}; " +
+                $"AverageAge: {MyConsole.GetDouble(AverageAge(humans))}");
         }
     }
 }

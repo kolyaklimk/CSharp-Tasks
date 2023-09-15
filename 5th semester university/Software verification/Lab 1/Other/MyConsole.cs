@@ -4,13 +4,13 @@ namespace Lab_1.Other
 {
     public static class MyConsole
     {
-        public static void printTasks(int a)
+        public static void PrintTasks(int a)
         {
             Console.WriteLine('\n'+new string('=', 50));
             Console.WriteLine($"Task{a}:\n");
         }
 
-        public static string GetError(double a)
+        public static string GetDouble(double a)
         {
             if (a == -1)
                 return "Error";
