@@ -9,7 +9,7 @@ namespace TriangleTests
         private double parameterA, parameterB, parameterC;
 
         [TestMethod]
-        public void CheckTriangle_Correct_tst()
+        public void checkTriangle_Correct_tst()
         {
             parameterA = 15;
             parameterB = 12;
@@ -19,7 +19,7 @@ namespace TriangleTests
         }
 
         [TestMethod]
-        public void CheckTriangle_Zero_A_tst()
+        public void checkTriangle_Zero_A_tst()
         {
             parameterA = 0;
             parameterB = 12;
@@ -101,9 +101,9 @@ namespace TriangleTests
         [TestMethod]
         public void CheckTriangle_Three_More_A_tst()
         {
-            parameterA = 14;
-            parameterB = 15;
-            parameterC = 12;
+            parameterA = 15;
+            parameterB = 12;
+            parameterC = 14;
             Triangle triangle = new Triangle(parameterA, parameterB, parameterC);
             Assert.IsTrue(triangle.CheckTriangle());
         }
