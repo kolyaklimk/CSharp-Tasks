@@ -42,7 +42,7 @@ namespace Lab_3
                 return false;
             }
 
-            if (c <= 0)
+            if (b <= 0)
             {
                 this.message = "c<=0";
                 return false;

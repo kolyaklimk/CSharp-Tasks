@@ -2,7 +2,7 @@
 
 namespace Lab_3
 {
-    class Program
+    class Runner
     {
         static void Main(string[] args)
         {
