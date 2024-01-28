@@ -1,6 +1,6 @@
 ﻿class CaesarCipher
 {
-    protected static string inputFilePath =
+    private static string inputFilePath =
         Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "input.txt");
     private static string encryptFilePath =
         Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "encrypt.txt");
