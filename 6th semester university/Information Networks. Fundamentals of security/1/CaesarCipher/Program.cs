@@ -31,7 +31,7 @@
     static void DecryptFile(uint shift)
     {
         string encryptedText = File.ReadAllText(encryptFilePath);
-        string decryptedText = Caesar(encryptedText, 0 - shift + 26);
+        string decryptedText = Caesar(encryptedText, 26 - shift);
         File.WriteAllText(decryptFilePath, decryptedText);
         Console.WriteLine($"\nDecrypted text in decrypt.txt:\n{decryptedText}");
     }
