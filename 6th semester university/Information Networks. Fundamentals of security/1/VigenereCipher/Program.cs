@@ -22,8 +22,10 @@ class VigenereCipher
 
     static void EncryptFile(string key)
     {
-        string plainText = File.ReadAllText(inputFilePath);
-        string encryptedText = Vigenere(plainText, key);
+        string fileText = File.ReadAllText(inputFilePath);
+        Console.WriteLine($"\nText in input.txt:\n{fileText}");
+
+        string encryptedText = Vigenere(fileText, key);
         File.WriteAllText(encryptFilePath, encryptedText);
         Console.WriteLine($"\nEncrypted text in encrypt.txt:\n{encryptedText}");
     }
@@ -47,8 +49,7 @@ class VigenereCipher
             {
                 char offset = char.IsUpper(text[i]) ? 'A' : 'a';
                 int keyValue = key[keyIndex] - 'A';
-                char encryptedChar = (char)((text[i] - offset + (isEncrypt ? keyValue : 26 - keyValue)) % 26 + offset);
-                result.Append(encryptedChar);
+                result.Append((char)((text[i] - offset + (isEncrypt ? keyValue : 26 - keyValue)) % 26 + offset));
 
                 keyIndex = (keyIndex + 1) % key.Length;
             }

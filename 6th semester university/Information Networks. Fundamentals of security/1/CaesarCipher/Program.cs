@@ -1,4 +1,6 @@
-﻿class CaesarCipher
+﻿using System.Text;
+
+class CaesarCipher
 {
     private static string inputFilePath =
         Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "input.txt");
@@ -36,16 +38,23 @@
         Console.WriteLine($"\nDecrypted text in decrypt.txt:\n{decryptedText}");
     }
 
-    static string Caesar(string input, uint shift)
+    static string Caesar(string text, uint shift)
     {
-        char[] text = input.ToCharArray();
+        StringBuilder result = new StringBuilder();
 
         for (int i = 0; i < text.Length; i++)
         {
-            char asciiOffset = char.IsUpper(text[i]) ? 'A' : 'a';
-            text[i] = (char)((text[i] + shift - asciiOffset) % 26 + asciiOffset);
+            if (char.IsLetter(text[i]))
+            {
+                char asciiOffset = char.IsUpper(text[i]) ? 'A' : 'a';
+                result.Append((char)((text[i] + shift - asciiOffset) % 26 + asciiOffset));
+            }
+            else
+            {
+                result.Append(text[i]);
+            }
         }
 
-        return new string(text);
+        return result.ToString();
     }
 }
