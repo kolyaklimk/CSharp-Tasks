@@ -3,11 +3,11 @@
 class VigenereCipher
 {
     private static string inputFilePath =
-        Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "input.txt");
+    Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "input.txt");
     private static string encryptFilePath =
-        Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "encrypt.txt");
+    Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "encrypt.txt");
     private static string decryptFilePath =
-        Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "decrypt.txt");
+    Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "decrypt.txt");
 
     static void Main()
     {
