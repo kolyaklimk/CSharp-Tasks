@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _2.Kerberos
+namespace _2.KerberosApplication
 {
     internal class Client
     {

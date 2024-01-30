@@ -9,14 +9,36 @@
             Padding="30,0"
             VerticalOptions="Center">
 
-            <Entry x:Name="Text"
-                    Text="KlimkovichNikolay153504"
-                    Placeholder="Identifier" />
+            <HorizontalStackLayout HorizontalOptions="Center">
+                <Label Text="ID:" 
+                       HorizontalOptions="End"
+                       VerticalOptions="Center"/>
+
+                <Entry x:Name="TextID"
+                       Text="KlimkovichNikolay153504"
+                       Placeholder="Identifier" 
+                       HorizontalOptions="Start"
+                       VerticalOptions="Center"/>
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout HorizontalOptions="Center">
+                <Label Text="KC:" 
+                       HorizontalOptions="End"
+                       VerticalOptions="Center"/>
+                
+                <Entry x:Name="TextKC"
+                       Text="Victoro"
+                       Placeholder="KC" 
+                       HorizontalOptions="Start"
+                       VerticalOptions="Center"/>
+            </HorizontalStackLayout>
+            
             <Button
                 x:Name="ConnectButton"
                 Text="Connect"
                 Clicked="OnCounterClicked"
                 HorizontalOptions="Center" />
+
 
             <Editor
                 x:Name="Result"

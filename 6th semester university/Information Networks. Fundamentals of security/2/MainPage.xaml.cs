@@ -9,7 +9,8 @@
 
         private void OnCounterClicked(object sender, EventArgs e)
         {
-            string id = Text.Text;
+            string ID = TextID.Text;
+            string KC = TextKC.Text;
         }
     }
 }
